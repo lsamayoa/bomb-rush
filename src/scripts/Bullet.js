@@ -9,7 +9,7 @@ define('Bullet', ['Phaser'], function (Phaser) {
         this.outOfBoundsKill = true;
         this.exists = false;
 
-        this.tracking = false;
+        this.tracking = true;
         this.scaleSpeed = 0;
 
     };
@@ -27,14 +27,11 @@ define('Bullet', ['Phaser'], function (Phaser) {
 
         this.game.physics.arcade.velocityFromRotation(rotation, speed, this.body.velocity);
 
-        this.rotation = rotation;
-
         this.body.gravity.set(gx, gy);
 
     };
 
     Bullet.prototype.update = function () {
-
         if (this.tracking)
         {
             this.rotation = Math.atan2(this.body.velocity.y, this.body.velocity.x);

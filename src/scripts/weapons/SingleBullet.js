@@ -13,8 +13,8 @@ define(['weapons/BaseWeapon'], function (BaseWeapon) {
 
     this.cooldown = this.fireRate;
 
-    var x = source.x + (Math.cos(rotation) * 40);
-    var y = source.y + (Math.sin(rotation) * 40);
+    var x = source.x + (Math.cos(rotation) * 64);
+    var y = source.y + (Math.sin(rotation) * 64);
     rotation = rotation || source.rotation;
 
     this.getFirstExists(false).fire(x, y, rotation, this.bulletSpeed, 0, 0);

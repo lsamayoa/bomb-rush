@@ -2,7 +2,7 @@
 
 "base-barrel.png":
 {
-	"frame": {"x":2,"y":36,"w":64,"h":20},
+	"frame": {"x":58,"y":36,"w":64,"h":20},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":20},
@@ -10,7 +10,7 @@
 },
 "base-dome.png":
 {
-	"frame": {"x":2,"y":2,"w":64,"h":32},
+	"frame": {"x":58,"y":2,"w":64,"h":32},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":0,"y":32,"w":64,"h":32},
@@ -18,19 +18,27 @@
 },
 "bullet.png":
 {
-	"frame": {"x":68,"y":2,"w":10,"h":10},
+	"frame": {"x":58,"y":58,"w":10,"h":10},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
 	"sourceSize": {"w":10,"h":10}
+},
+"regular-bomb.png":
+{
+	"frame": {"x":2,"y":2,"w":54,"h":117},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":117},
+	"sourceSize": {"w":54,"h":117}
 }},
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "bomb-rush-spritesheet.png",
 	"format": "RGBA8888",
-	"size": {"w":80,"h":58},
+	"size": {"w":124,"h":121},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:5d30de7c13bc9f68a76a21562210518d:378fbbb652c89ec1bcf62d16871463c2:ec95e999da8787c9cef7390858db4177$"
+	"smartupdate": "$TexturePacker:SmartUpdate:dd0042cf559fdda1d66b21b7c2e7ad5a:61551d1c3397bfc7f9153de8a41da903:ec95e999da8787c9cef7390858db4177$"
 }
 }

@@ -191,6 +191,7 @@
             <filename>base-dome.png</filename>
             <filename>base-barrel.png</filename>
             <filename>bullet.png</filename>
+            <filename>regular-bomb.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

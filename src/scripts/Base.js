@@ -1,4 +1,4 @@
-define('Base', ['Phaser', 'Weapon', 'weapons/Shotgun'], function (Phaser, Weapon, SingleBulletWeapon) {
+define('Base', ['Phaser', 'weapons/SingleBullet'], function (Phaser, SingleBulletWeapon) {
   function Base (game, x, y, weapon) { 
     Phaser.Group.call(this, game, null, 'base');
 

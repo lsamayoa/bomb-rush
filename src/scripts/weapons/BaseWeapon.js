@@ -1,7 +1,15 @@
 define(['Phaser', 'Bullet'], function (Phaser, Bullet) {
   function BaseWeapon (game, key, bulletKey, bulletFrame) {
 
-      Phaser.Group.call(this, game, game.world, key, false, true, Phaser.Physics.ARCADE);
+      Phaser.Group.call(
+        this,
+        game,
+        game.world,
+        key,
+        false,
+        true,
+        Phaser.Physics.ARCADE
+      );
 
       this.cooldown = 0;
       this.bulletSpeed = 600;
@@ -20,12 +28,13 @@ define(['Phaser', 'Bullet'], function (Phaser, Bullet) {
   BaseWeapon.prototype.constructor = BaseWeapon;
 
   BaseWeapon.prototype.update = function () {
-      if (this.cooldown > 0) this.cooldown -= this.game.time.elapsedMS;
+    Phaser.Group.prototype.update.call(this); // TODO: Use ES6 super
+    if (this.cooldown > 0) this.cooldown -= this.game.time.elapsedMS;
   }
 
   BaseWeapon.prototype.canShoot = function () {
       return this.cooldown <= 0;
   }
-  
+
   return BaseWeapon;
 });
